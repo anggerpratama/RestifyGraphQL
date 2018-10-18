@@ -3,6 +3,7 @@ import UserQuery from '../app/GraphQL/Users/Query/UsersQuery';
 import UserMutation from '../app/GraphQL/Users/Mutation/CreateUsersMutation';
 import DeleteUserMutation from '../app/GraphQL/Users/Mutation/DeleteUserMutation';
 import UpdateUserMutation from "../app/GraphQL/Users/Mutation/UpdateUserMutation";
+import UserAuthentication from '../app/GraphQL/Auth/Mutation/AuthenticationMutation';
 
 /*
 |--------------------------------------------------------------------------
@@ -27,28 +28,29 @@ const RootQuery = new GraphQLObjectType({
     }
 });
 
-/*
-|--------------------------------------------------------------------------
-| Mutation Config
-|--------------------------------------------------------------------------
-|
-| Define all graphQL Mutations in yours Application
-| It will apply all Mutations after you define it in this section
-|
-| Add yours Mutations at this section
-|
-| fields: {
-|     users: UserMutation
-| }
-|
-*/
+    /*
+    |--------------------------------------------------------------------------
+    | Mutation Config
+    |--------------------------------------------------------------------------
+    |
+    | Define all graphQL Mutations in yours Application
+    | It will apply all Mutations after you define it in this section
+    |
+    | Add yours Mutations at this section
+    |
+    | fields: {
+    |     users: UserMutation
+    | }
+    |
+    */
 
 const RootMutation = new GraphQLObjectType({
     name: 'MutationsRoot',
     fields: {
         create_user: UserMutation,
         delete_user: DeleteUserMutation,
-        update_user: UpdateUserMutation
+        update_user: UpdateUserMutation,
+        login_user: UserAuthentication
     }
 });
 

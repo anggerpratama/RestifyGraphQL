@@ -15,6 +15,18 @@ const userSchema = new Schema({
     address: { 
         type: String , 
         default: "Not Defined" 
+    },
+    username: {
+        type: String ,
+        required: true
+    },
+    password: {
+        type: String ,
+        required: true,
+    },
+    token: {
+        type: String ,
+        default: null
     }
     
 } , {collection:"users_data"});

@@ -24,6 +24,14 @@ export default {
             type: GraphQLNonNull(GraphQLString),
             description: "this argument field to store lastname users, required"
         },
+        username: {
+            type: GraphQLNonNull(GraphQLString),
+            description: "this argument field to store username users, required"
+        },
+        password: {
+            type: GraphQLNonNull(GraphQLString),
+            description: "this argument field to store password users, required"
+        },
         address: {
             type: GraphQLString,
             description: "this argument field to store address users"

@@ -24,6 +24,14 @@ export default new GraphQLObjectType({
             type: GraphQLString,
             description: 'field response of users lastname'
         },
+        username: {
+            type: GraphQLString,
+            description: 'field response of users username'
+        },
+        password: {
+            type: GraphQLString,
+            description: 'field response of users password'
+        },
         address: {
             type: GraphQLString,
             description: 'address users fields response'
