@@ -19,7 +19,7 @@
     "dotenv": "^6.0.0",
     "express-graphql": "^0.6.12",
     "graphql": "^14.0.2",
-    "jsonwebtoken": "^8.3.0",
+    "jsonwebtoken": "^9.0.0",
     "mongoose": "^5.3.0",
     "password-hash": "^1.2.2",
     "restify": "^7.2.1",
